@@ -1,0 +1,61 @@
+  .limited-schedules {
+    background-color: #ffffff;
+    padding: 80px 20px;
+    text-align: center;
+    color: #003920;
+  }
+  
+  .limited-schedules .limited-schedules-content {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  .limited-schedules h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 24px;
+  }
+  
+  .limited-schedules p {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 16px;
+    color: #1d1d1d;
+  }
+  
+  .limited-schedules strong {
+    color: #a0361f;
+    font-weight: bold;
+  }
+  
+  .limited-schedules-list-check {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+    text-align: left;
+    display: inline-block;
+    color: #1d1d1d;
+  }
+  
+  .limited-schedules-list-check li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .limited-schedules-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 16px 24px;
+    background: linear-gradient(90deg, #de5f29, #b33e1f);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+    transition: transform 0.2s ease;
+  }
+  
+  .limited-schedules-button:hover {
+    transform: scale(1.02);
+  }

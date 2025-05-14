@@ -1,0 +1,87 @@
+  .free-analisys {
+    display: flex;
+    justify-content: center;
+    background-color: #003920;
+  }
+
+  .free-analisys-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #003920;
+    padding: 60px 10%;
+    flex-wrap: wrap;
+    gap: 40px;
+    color: white;
+  }
+  
+  .free-analisys-text {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+  }
+  
+  .free-analisys-text h2 {
+    font-size: 2rem;
+    margin-bottom: 16px;
+    line-height: 1.4;
+  }
+  
+  .free-analisys-text .emphasis {
+    color: #f56f46;
+    font-weight: bold;
+  }
+  
+  .free-analisys-text p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+  
+  .free-analisys-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 16px 24px;
+    background: linear-gradient(90deg, #de5f29, #b33e1f);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+    transition: transform 0.2s ease;
+  }
+  
+  .free-analisys-button:hover {
+    transform: scale(1.02);
+  }
+
+  .free-analisys-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    min-width: 300px;
+    position: relative;
+  }
+
+  .free-analisys-image-shine{
+    position: relative;
+    max-width: 520px;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+
+   .free-analisys-image-shine img {
+    width: 100%;
+    display: block;
+    border-radius: 16px;
+  }
+  
+  .shine-effect {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 40px;
+    background: linear-gradient(to right, rgba(0, 255, 200, 0.4), transparent);
+    z-index: 2;
+    pointer-events: none;
+  }

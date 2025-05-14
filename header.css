@@ -1,0 +1,32 @@
+header {
+    background-color: #002c22;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+  }
+
+  .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1200px;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 60px;
+    flex-wrap: wrap; /* para responsividade */
+  }
+  
+  .logo {
+    height: 50px;
+  }
+  
+  .header-button {
+    background-color: #D55827;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+  }
