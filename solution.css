@@ -1,5 +1,5 @@
 .solution-section {
-    background-color: #084135;
+    background-color: #1F1F1F;
     color: white;
     padding: 60px 40px;
   }
@@ -85,7 +85,7 @@
   }
   
   .cards-list li {
-    background-color: #06382e;
+    background-color: #2A2A2A;
     padding: 15px 20px;
     margin-bottom: 15px;
     border-radius: 10px;

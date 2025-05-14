@@ -1,3 +1,6 @@
+
+  new WOW().init();
+
 // Realce do ícone ativo no menu ao rolar a página
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".sidebar ul li a");
@@ -27,4 +30,5 @@ window.addEventListener("scroll", () => {
       item.classList.toggle('open');
     });
   });
+
 

@@ -1,5 +1,5 @@
 header {
-    background-color: #002c22;
+    background-color: #2A2A2A;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,7 +18,7 @@ header {
   }
   
   .logo {
-    height: 50px;
+    height: 60px;
   }
   
   .header-button {

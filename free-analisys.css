@@ -1,14 +1,14 @@
   .free-analisys {
     display: flex;
     justify-content: center;
-    background-color: #003920;
+    background-color: #1F1F1F;
   }
 
   .free-analisys-content{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #003920;
+    background-color: #1F1F1F;
     padding: 60px 10%;
     flex-wrap: wrap;
     gap: 40px;
@@ -75,7 +75,7 @@
     border-radius: 16px;
   }
   
-  .shine-effect {
+  /* .shine-effect {
     position: absolute;
     left: 0;
     top: 0;
@@ -84,4 +84,4 @@
     background: linear-gradient(to right, rgba(0, 255, 200, 0.4), transparent);
     z-index: 2;
     pointer-events: none;
-  }
+  } */
