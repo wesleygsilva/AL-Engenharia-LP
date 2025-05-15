@@ -1,0 +1,233 @@
+#contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF;
+    color: #203124;
+}
+
+.contact-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: #FFF;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.contact-logo {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    animation: fadeInUp;
+    animation-duration: 1.2s; 
+}
+
+.contact-logo img{
+    height: 150px;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.social-media a {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.social-media img {
+    width: 40px;
+    height: 40px;
+}
+
+.contact-customer-service {
+    text-align: center;
+    line-height: 30px;
+    padding-bottom: 5px;
+    padding-top: 10px;
+}
+
+.contact-customer-service h1{
+    font-size: 20px;
+}
+
+.contact-customer-service i{
+    color: #4B2436;
+}
+
+.contact-customer-service a {
+    list-style: none;
+    text-decoration: none;
+    color: #203124;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.contact-info {
+    padding-left: 30px;
+    padding-right: 30px;
+    flex-grow: 1;
+    animation: fadeInDown;
+    animation-duration: 1.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-address {
+    text-align: center;
+    line-height: 30px;
+    margin-bottom: 0px;
+}
+
+.contact-address h1 {
+    font-size: 24px; 
+}
+
+.contact-address p {
+    font-size: 18px;
+}
+
+.contact-address i {
+    color: #4B2436;
+}
+
+.contact-address a {
+    color: #4B2436;
+    text-decoration: none;
+}
+
+.contact-map {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    animation: fadeInUp;
+    animation-duration: 1.2s;
+}
+
+.map-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden; /* Garanta que o círculo não saia dos limites */
+}
+
+.circle {
+    position: absolute;
+    width: 80%; /* Tamanho do círculo em relação ao mapa */
+    height: 80%;
+    background-color: rgba(255, 0, 0, 0.3); /* Vermelho com opacidade */
+    border-radius: 50%;
+    top: 10%; /* Centralize verticalmente */
+    left: 10%; /* Centralize horizontalmente */
+    z-index: 100;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+    .map-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-map iframe {
+        padding-right: 10px;
+        width: 280px;
+        height: 280px;
+    }
+
+    .circle {
+        position: absolute;
+        width: 78%; /* Tamanho do círculo em relação ao mapa */
+        height: 78%;
+        background-color: rgba(255, 0, 0, 0.3); /* Vermelho com opacidade */
+        border-radius: 50%;
+        top: 10%; /* Centralize verticalmente */
+        left: 10%; /* Centralize horizontalmente */
+        z-index: 100;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .contact-area {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info {
+        margin-bottom: 40px;
+    }
+
+    .contact-map{
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact-map iframe {
+        width: 300px;
+        height: 300px;
+        padding-right: 0px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .contact-logo img {
+        height: 100px; /* Reduz tamanho da logo */
+    }
+
+    .social-media img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .contact-customer-service h1 {
+        font-size: 18px;
+    }
+
+    .contact-customer-service a {
+        font-size: 18px;
+    }
+
+    .contact-info {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .contact-address h1 {
+        font-size: 18px;
+    }
+
+    .contact-address p,
+    .contact-address a p {
+        font-size: 14px;
+    }
+
+    .contact-map {
+        width: 100%;
+        max-width: 260px;
+        justify-content: center;
+    }
+
+    .map-container {
+        width: 260px;
+        height: 260px;
+    }
+
+    .circle {
+        width: 75%;
+        height: 75%;
+        top: 12.5%;
+        left: 12.5%;
+    }
+}
+
+

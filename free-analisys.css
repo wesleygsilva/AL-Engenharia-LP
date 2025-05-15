@@ -28,7 +28,7 @@
   }
   
   .free-analisys-text .emphasis {
-    color: #f56f46;
+    color: #c67b8f;
     font-weight: bold;
   }
   
@@ -41,7 +41,7 @@
     display: inline-block;
     margin-top: 20px;
     padding: 16px 24px;
-    background: linear-gradient(90deg, #de5f29, #b33e1f);
+    background: linear-gradient(90deg, #642d3e, #7e4556);
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -74,14 +74,30 @@
     display: block;
     border-radius: 16px;
   }
-  
-  /* .shine-effect {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 40px;
-    background: linear-gradient(to right, rgba(0, 255, 200, 0.4), transparent);
-    z-index: 2;
-    pointer-events: none;
-  } */
+
+  @media (max-width: 768px) {
+  .free-analisys-content {
+    flex-direction: column-reverse;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .free-analisys-text h2 {
+    font-size: 1.6rem;
+  }
+
+  .free-analisys-button {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .free-analisys-image {
+    justify-content: center;
+  }
+
+  .free-analisys-image-shine {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+

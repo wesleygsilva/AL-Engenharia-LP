@@ -1,109 +1,161 @@
 .solution-section {
-    background-color: #1F1F1F;
-    color: white;
-    padding: 60px 40px;
-  }
-  
+  background-color: #1F1F1F;
+  color: white;
+  padding: 60px 20px;
+}
+
+.solution-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.solution-image-frame {
+  position: relative;
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 25px 35px rgba(0, 0, 0, 0.3);
+  flex: 1;
+  min-width: 280px;
+  max-width: 440px;
+  display: flex;
+  justify-content: center;
+}
+
+.image-row {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.image-row img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.fita {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-3deg);
+  background-color: #6e253e;
+  width: 100px;
+  height: 20px;
+  border-radius: 3px;
+  z-index: 10;
+}
+
+.solution-text {
+  flex: 1;
+  min-width: 280px;
+  max-width: 600px;
+}
+
+.section-subtitle {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  color: #be9f91;
+  margin-bottom: 10px;
+}
+
+.solution-text h2 {
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  line-height: 1.4;
+}
+
+.solution-text h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  line-height: 1.4;
+}
+
+.highlight {
+  color: #c67b8f;
+}
+
+.cards-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.cards-list li {
+  background-color: #2A2A2A;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  font-size: 1rem;
+  line-height: 1.5;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.icon {
+  color: #c67b8f;
+  font-size: 1.2rem;
+  margin-top: 2px;
+}
+
+.solution-question {
+  color: #c67b8f;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* Responsividade para telas menores que 768px */
+@media (max-width: 768px) {
   .solution-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-    width: 1200px;
-    max-width: 1200px;
-    margin: 0 auto;
-    flex-wrap: wrap;
-  }
-  
-  .solution-image-frame {
-    position: relative;
-    background: white;
-    padding: 20px;
-    border-radius: 16px;
-    box-shadow: 0 25px 35px rgba(0, 0, 0, 0.3);
-  }
-  
-  .image-row {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .image-row img {
-    width: 400px;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 10px;
-  }
-  
-  .fita {
-    position: absolute;
-    top: -10px;
-    left: 50%;
-    transform: translateX(-50%) rotate(-3deg);
-    background-color: #F2673D;
-    width: 100px;
-    height: 20px;
-    border-radius: 3px;
-    z-index: 10;
-  }
-  
-  .solution-text {
-    flex: 1;
-    max-width: 600px;
-  }
-  
-  .section-subtitle {
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 0.8rem;
-    color: #be9f91;
-    margin-bottom: 10px;
-  }
-  
-  .solution-text h2 {
-    font-size: 1.7rem;
-    font-weight: bold;
-    margin-bottom: 30px;
-    line-height: 1.4;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
   }
 
+  .solution-text h2,
   .solution-text h3 {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 30px;
-    line-height: 1.4;
+    text-align: center;
   }
-  
-  .highlight {
-    color: #F2673D;
-  }
-  
-  .cards-list {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 30px;
-  }
-  
+
   .cards-list li {
-    background-color: #2A2A2A;
-    padding: 15px 20px;
-    margin-bottom: 15px;
-    border-radius: 10px;
-    font-size: 1rem;
-    line-height: 1.5;
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
   }
-  
-  .icon {
-    color: #F2673D;
-    font-size: 1.2rem;
-    margin-top: 2px;
-  }
-  
+
   .solution-question {
-    color: #F2673D;
-    font-weight: bold;
-    font-size: 1.1rem;
+    text-align: center;
   }
+
+  .solution-image-frame {
+    padding: 10px;
+  }
+
+  .image-row img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Extra: ajuste para telas super pequenas */
+@media (max-width: 480px) {
+  .solution-content {
+    padding: 0 16px;
+  }
+
+  .image-row img {
+    width: 100%;
+    height: auto;
+  }
+}

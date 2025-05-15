@@ -8,7 +8,7 @@
   
   .faq h2 {
     font-size: 2rem;
-    color: #eb6e40;
+    color: #6e253e;
     font-weight: bold;
     margin-bottom: 40px;
   }
@@ -43,20 +43,23 @@
   
   .faq-question span {
     font-size: 24px;
-    color: #a0361f;
+    color: #c67b8f
   }
   
   .faq-answer {
-    display: none;
-    padding: 0 20px 20px 20px;
-    font-size: 0.95rem;
-    line-height: 1.6;
-    color: #333;
-  }
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+  padding: 0 20px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #333;
+}
   
-  .faq-item.open .faq-answer {
-    display: block;
-  }
+ .faq-item.open .faq-answer {
+  max-height: 500px; /* suficiente para o conteúdo */
+  padding: 20px;
+}
   
   .faq-item.open .faq-question span {
     transform: rotate(45deg);
@@ -67,3 +70,45 @@
     font-size: 0.85rem;
     color: #003920;
   }
+
+  @media (max-width: 768px) {
+  .faq {
+    padding: 60px 16px;
+  }
+
+  .faq h2 {
+    font-size: 1.6rem;
+  }
+
+  .faq-container {
+    border-radius: 0;
+  }
+
+  .faq-question {
+    padding: 16px;
+    font-size: 0.95rem;
+    flex-wrap: nowrap; /* impede quebra de linha */
+    justify-content: space-between; /* mantém texto à esquerda e + à direita */
+    gap: 0; /* elimina espaço desnecessário */
+  }
+
+  .faq-question span {
+    font-size: 20px;
+    flex-shrink: 0; /* impede que o + encolha */
+    margin-left: 10px; /* opcional: distância do texto */
+  }
+
+  .faq-answer {
+    font-size: 0.95rem;
+    padding: 0 16px;
+  }
+
+  .faq-item.open .faq-answer {
+    padding: 16px;
+  }
+
+  .faq-footer {
+    margin-top: 40px;
+    font-size: 0.8rem;
+  }
+}

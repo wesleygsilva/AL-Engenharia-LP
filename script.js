@@ -1,6 +1,3 @@
-
-  new WOW().init();
-
 // Realce do ícone ativo no menu ao rolar a página
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".sidebar ul li a");
@@ -23,12 +20,23 @@ window.addEventListener("scroll", () => {
   });
 });
 
+// === Accordion FAQ com efeito suave ===
 
-  document.querySelectorAll('.faq-question').forEach(button => {
-    button.addEventListener('click', () => {
-      const item = button.parentElement;
-      item.classList.toggle('open');
+const questions = document.querySelectorAll('.faq-question');
+
+questions.forEach((question) => {
+  question.addEventListener('click', () => {
+    const item = question.parentElement;
+    const isOpen = item.classList.contains('open');
+
+    // Fecha todos os outros
+    document.querySelectorAll('.faq-item.open').forEach((el) => {
+      el.classList.remove('open');
     });
+
+    // Abre o clicado se ainda não estiver aberto
+    if (!isOpen) {
+      item.classList.add('open');
+    }
   });
-
-
+});

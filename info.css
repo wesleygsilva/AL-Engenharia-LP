@@ -24,7 +24,7 @@
   .info-text-content h2 {
     font-size: 2rem;
     font-weight: 700;
-    color: #003920;
+    color: #333;
     margin-bottom: 20px;
     line-height: 1.4;
   }
@@ -32,13 +32,13 @@
   .info-text-content h3 {
     font-size: 1.2rem;
     font-weight: 700;
-    color: #003920;
+    color: #333;
     margin-bottom: 20px;
     line-height: 1.4;
   }
   
   .info-text-content .highlight {
-    color: #E64C3C;
+    color: #6e253e;
     font-weight: bold;
   }
   
@@ -75,7 +75,7 @@
     top: 0;
     left: 50%;
     transform: translate(-50%, -50%) rotate(-5deg);
-    background-color: #de5f29;
+    background-color: #6e253e;
     width: 150px;
     height: 30px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
@@ -90,7 +90,7 @@
   .info-button {
     display: inline-block;
     padding: 16px 24px;
-    background: linear-gradient(90deg, #de5f29, #b33e1f);
+    background: linear-gradient(90deg, #6e253e, #7e4556);
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -102,3 +102,83 @@
   .info-button:hover {
     transform: scale(1.02);
   }
+
+  /* Responsividade para telas menores que 1024px */
+@media (max-width: 1024px) {
+  .info-section-content {
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .info-text-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .info-text-content h3 {
+    font-size: 1.1rem;
+  }
+}
+
+/* Responsividade para telas menores que 768px (mobile e tablets) */
+@media (max-width: 768px) {
+  .info-section {
+    padding: 40px 20px;
+  }
+
+.info-section-content {
+  flex-direction: column-reverse;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+}
+
+
+  .info-text-content {
+    text-align: left;
+  }
+
+  .info-text-content h2 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .info-text-content h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .info-text-content ol {
+    padding-left: 16px;
+  }
+
+  .info-text-content li {
+    font-size: 0.95rem;
+  }
+
+  .info-image-wrapper {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  .info-image-wrapper .info-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .info-image-wrapper .info-image-ribbon {
+    width: 120px;
+    height: 25px;
+  }
+
+  .info-section-button-area {
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .info-button {
+    padding: 14px 20px;
+    font-size: 0.95rem;
+    text-align: center;
+  }
+}
